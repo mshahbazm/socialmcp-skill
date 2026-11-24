@@ -21,10 +21,12 @@ If the SocialMCP tools (`get_account`, `create_post`…) aren't available yet, h
 
 **OpenClaw**
 
+<!-- commands:openclaw.connect -->
 ```bash
 openclaw mcp add socialmcp --url https://getsocialmcp.com/mcp --transport streamable-http --auth oauth
 openclaw mcp login socialmcp
 ```
+<!-- /commands -->
 
 - If the Gateway is running and `add` refuses to probe, add `--no-probe`.
 - Or in the Control UI: Settings → MCP → Add server → Streamable HTTP → `https://getsocialmcp.com/mcp`, then **Sign in**.
@@ -32,10 +34,12 @@ openclaw mcp login socialmcp
 
 **Hermes Agent**
 
+<!-- commands:hermes.connect -->
 ```bash
 hermes mcp add socialmcp --url https://getsocialmcp.com/mcp --auth oauth
 hermes mcp login socialmcp
 ```
+<!-- /commands -->
 
 - Run `hermes mcp login` in its own terminal, then `/reload-mcp` in the session.
 - On a remote machine, paste the failed redirect URL back into Hermes when it asks, or use an SSH tunnel to the callback port it prints.

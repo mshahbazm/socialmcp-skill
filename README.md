@@ -10,21 +10,27 @@ Works with OpenClaw, Hermes Agent and any agent that reads [Agent Skills](https:
 
 **Any agent** (with the open `skills` CLI):
 
+<!-- commands:any_agent.skill -->
 ```bash
 npx skills add mshahbazm/socialmcp-skill
 ```
+<!-- /commands -->
 
 **OpenClaw**
 
+<!-- commands:openclaw.skill -->
 ```bash
-npx skills add mshahbazm/socialmcp-skill -a openclaw -g
+openclaw skills install @mshahbazm/socialmcp --global
 ```
+<!-- /commands -->
 
 **Hermes Agent**
 
+<!-- commands:hermes.skill -->
 ```bash
 hermes skills install mshahbazm/socialmcp-skill/skills/socialmcp
 ```
+<!-- /commands -->
 
 ## Connect SocialMCP
 
@@ -32,17 +38,21 @@ The skill walks your agent through this, but you can also do it yourself.
 
 **OpenClaw**
 
+<!-- commands:openclaw.connect -->
 ```bash
 openclaw mcp add socialmcp --url https://getsocialmcp.com/mcp --transport streamable-http --auth oauth
 openclaw mcp login socialmcp
 ```
+<!-- /commands -->
 
 **Hermes Agent**
 
+<!-- commands:hermes.connect -->
 ```bash
 hermes mcp add socialmcp --url https://getsocialmcp.com/mcp --auth oauth
 hermes mcp login socialmcp
 ```
+<!-- /commands -->
 
 Your browser opens SocialMCP's sign-in page. Sign in and click **Allow**. You need a SocialMCP account ([start free](https://getsocialmcp.com/signup)) with your X account or LinkedIn profile connected. SocialMCP posts through the official X and LinkedIn APIs and never sees your passwords.
 
